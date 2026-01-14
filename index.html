@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fix + Flex</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">WD290</a>
+
+      <!-- Responsive nav toggle (no JS) -->
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" />
+      <label class="nav-toggle-label" for="nav-toggle">
+        Menu
+      </label>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#work">Work</li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title">Build it clean. Make it flex.</h1>
+          <p class="lead">
+            This page is semantic, but it has problems. Fix the HTML, then style it with CSS and Flexbox.
+          </p>
+          <a class="button" href="#work">See examples</a>
+        </div>
+
+        <figure class="hero-media">
+          <img
+            src="https://picsum.photos/seed/hero/900/600"
+            alt="Abstract placeholder image"
+            width="900"
+            height="600"
+            loading="lazy"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="container">
+        <p>
+            <h2>Today’s focus: structure, layout, polish</h2>
+        </p>
+        <p class="muted">Make these responsive using Flexbox. On small screens they stack. On larger screens they form columns.</p>
+
+        <div class="card-row">
+          <article class="card">
+            <img
+              src="https://picsum.photos/seed/card1/800/500"
+              alt="Card image 1"
+              width="800"
+              height="500"
+              loading="lazy"
+            />
+            <h3>Card One</h3>
+            <p>Short description goes here. Keep it readable.</p>
+            <a href="#" class="text-link">Read more</a>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://picsum.photos/seed/card2/800/500"
+              alt="Card image 2"
+              width="800"
+              height="500"
+              loading="lazy"
+            />
+            <h3>Card Two</h3>
+            <p>Another short description. Consistent spacing matters.</p>
+            <a href="#" class="text-link">Read more</a>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://picsum.photos/seed/card3/800/500"
+              alt="Card image 3"
+              width="800"
+              height="500"
+              loading="lazy"
+            />
+            <h3>Card Three</h3>
+            <p>Third card. Your layout should wrap nicely.</p>
+            <a href="#" class="text-link">Read more</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="resources">
+      <div class="container content-split">
+        <article class="content">
+          <h2>Content Area</h2>
+
+          <img
+            src="https://picsum.photos/seed/content/1200/700"
+            alt="Content area placeholder image"
+            width="1200"
+            height="700"
+            loading="lazy"
+          />
+
+          <p>
+            On mobile: everything stacks. On desktop: this becomes a two-column layout using Flexbox.
+          </p>
+          <p>
+            Add comfortable line-height, max-width, and spacing. Don’t cram the text.
+          </p>
+        </article>
+
+        <aside class="sidebar">
+          <h3>Quick Links</h3>
+          <ul class="list">
+            <li><a href="https://validator.w3.org/#validate_by_upload" class="text-link">HTML Validator</a></li>
+            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" class="text-link">Flexbox Cheatsheet</a></li>
+            <li><a href="https://www.w3schools.com/css/css3_mediaqueries.asp" class="text-link">MDN: Media Queries</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <p>WD290 Web Language III</p>
+      <p class="muted">Submit via GitHub Pages + Moodle links.</p>
+    </div>
+  </footer>
+</body>
+</html>
